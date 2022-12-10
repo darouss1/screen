@@ -27,7 +27,7 @@
 .App .screen {
   width: 100%;
   max-width: 1920px;
-  aspect-ratio: 1;
+  aspect-ratio: ;
   position: relative;
   margin-top: 0px;
 }
