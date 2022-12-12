@@ -7,7 +7,7 @@ const emotesList = [
   { id: "question", src: "./icons/question.svg" },
   { id: "castled", src: "./icons/castle.svg" },
 ];
-const emoteSize = 32;
+const emoteSize = 42;
 const showToolTip = false; // To show or not to show the tool tip
 const limitReactions = true; // To limit the reactions per duration or not
 const reactionsLimitDuration = 1; // Duration in seconds
@@ -50,7 +50,7 @@ socket.on("show-reaction", ({ emote }) => {
   anime({
     targets: newFlyingEmote,
     opacity: [1, 0],
-    translateY: -flyingEmotesContainer.clientHeight * 1.5,
+    translateY: -flyingEmotesContainer.clientHeight * 1.0,
     duration: Math.random() * 500 + 2000,
     easing: "easeInQuad",
   });
